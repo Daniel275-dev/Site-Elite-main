@@ -3,7 +3,7 @@
     padding: 0;
 }
 body, html{
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(219, 219, 219);
     
 }
 .header{
@@ -201,7 +201,7 @@ main{
     width: 90px;
     color: white;
 }
-.interacao button:hover{
+.interacao #btn:hover{
     background-color: #5d63a0;
 }
 .atendimento_usuario{
@@ -211,3 +211,47 @@ main{
     width: 25px;
     color: #5d63a0;
 }
+.story-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .story {
+    min-width: 100px;
+    height: 150px;
+    border-radius: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .scroll-btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  .story img{
+    height: 90%;
+    width: 95%;
+    text-align: center;
+    cursor: pointer;
+    margin: 3px;
+  }
+  .story img:hover{
+    transform: scale(1.05);
+    transition: transform 0.4s;
+  }

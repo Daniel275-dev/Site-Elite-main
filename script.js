@@ -58,3 +58,7 @@ cpfInput.addEventListener('input', function (e) {
   e.target.value = valor;
 });
 // code carrosel
+function scrollStories(distance) {
+  const container = document.getElementById('storyContainer');
+  container.scrollBy({ left: distance, behavior: 'smooth' });
+}
