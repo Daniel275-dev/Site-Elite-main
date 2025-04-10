@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    background-color: rgb(255, 0, 0);
+    
+}
+.header{
+    background-color: rgba(147, 134, 223, 0.854);
+    width: 100%;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 1px outset whitesmoke;
+}
+.header h1{
+    font-size: 25px;
+    margin-left: 27%;
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.837);
+}
+.redes_sociais img, a{
+    color: rgba(0, 0, 0, 0.811);
+    height: 30px;
+    margin-left: 3px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.header a:hover{
+    text-decoration: 2px underline black;
+}
+.nav{
+    background-color: rgba(147, 134, 223, 0.854);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+.nav img{
+    width: 70px;
+}
+.nav h1{
+    font-size: large;
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.837);
+    margin-left: 7px;
+}
+.nav_tags{
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    margin-left: 5%;
+    padding: 10px;
+}
+.nav_tags a{
+    color: rgba(255, 255, 255, 0.836);
+    font-weight: 500;
+    font-size: 16px;
+}
+.nav_tags a:hover{
+    color: white;
+    text-decoration: 2px underline rgb(120, 0, 248);
+}
+.nav_tags label{
+    height: 30px;
+    width: 90px;
+    align-content: center;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+}
+label:hover{
+    background-color: rgb(195, 0, 255);
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    height: 40%;
+}
+.search img{
+    width: 25px;
+    background-color: #5f41aa;
+    border-radius: 5px 0px 0px 5px;
+}
+.search input{
+    padding: 3px;
+    border-radius: 0px 5px 5px 0px ;
+    background-color: gainsboro;
+    color: black;
+    width: 250px;
+    border: 1px ridge black;
+}
+.subhead{
+    background-color: rgb(219, 219, 219);
+    width: 100%;
+    height: 40%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.subhead img{
+    width: 99%;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 7px 7px 7px 7px ;
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+.subhead:hover img{
+    transform: scale(1.1);
+}
+main{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(219, 219, 219);
+}
+.sidebar{
+    background-color: white;
+    width: 200px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 7px solid rgb(188, 188, 188);
+    border-radius: 7px;
+    margin: 8px;
+    padding: 4px;
+}
+.sidebar img{
+    padding: 6px;
+    width: 60%;
+    border-radius: 10px;
+}
+.sidebar:hover img{
+    transform: scale(1.2);
+    transition: transform 0.4s;
+}
+.sidebar input{
+    width: 30px;
+    text-align: center;
+    border: 1px ridge black;
+}
+.sidebar button{
+    margin-bottom: 2px;
+    padding: 5px;
+    background-color: #2e3760;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 70%;
+    cursor: pointer;
+}
+.sidebar button:hover{
+   background-color:#5d63a0;
+}
+.footer{
+    background-color: blueviolet;
+    width: 100%;
+    height: auto;
+}
+.interacao{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.interacao p{
+    padding: 3px;
+    font-family: sans-serif;
+    font-weight: 600;
+
+}
+.interacao a{
+    font-weight: 700;
+}
+.interacao a:hover{
+    text-decoration: underline;
+}
+.interacao input{
+    padding: 3px;
+    border-radius: 7px;
+    width: 280px;
+}
+#btn{
+    border-radius: 7px;
+    background-color: #2e3760;
+    padding: 5px;
+    width: 90px;
+    color: white;
+}
+.interacao button:hover{
+    background-color: #5d63a0;
+}
+.atendimento_usuario{
+    text-align: center;
+}
+.atendimento_usuario img{
+    width: 25px;
+    color: #5d63a0;
+}

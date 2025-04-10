@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    min-width: 1%;
+    min-height: 10%;
+}
+body{
+    background-color: #c6c6e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main{
+    margin: 100px 0px 100px 0px;
+    background-color: #b3b3d8;
+    border-radius:10px;
+    border: 5px double #d9d9ec;
+    height: auto;
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main h1{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+#quest{
+    color: white;
+    font-size: 20px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15vh;
+}
+.container input{
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 5px;
+    width: 50vh;
+}
+.container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.primeira{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.primeira label{
+    padding: 14px 0px 2px 7px;
+    color: white;
+    font-family: sans-serif;
+}
+.dados_user{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+.direction{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.direction input{
+    padding: 3px;
+    margin-left: 3px;
+    width: 25vh;
+}
+.dados_user label{
+    font-size: large;
+    padding: 7px 3px 7px 3px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+.btn{
+    margin:20px;
+    border-radius: 12px;
+    color: #ffffff;
+    background-color: #5d6697;
+    cursor: pointer;
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+    border: 2px outset #c6c6e2;
+}
+button:hover{
+    background-color: #747698;
+}
+.interation{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: white;
+}
+.interation input{
+    margin-left: 4px;
+    padding: 2px;
+}
+.interation label{
+    margin-left: 12px;
+}
+
+.terms_privace{
+    text-align: center;
+    color: rgba(246, 245, 250, 0.699);
+}
+.links{
+    text-decoration: none;
+    color:#2b3a6f;
+}

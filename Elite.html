@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Elite</title>
+</head>
+<body>
+    <div class="main">
+
+        <div class="logo">
+            <img src="./img_cadastro/imagotipo_elite.png" alt="imagotipo da loja Elite soccer hub">
+        </div>
+
+        <h1>crie seu cadastro</h1>
+
+        <div class="container">
+            <div class="primeira">
+                <label for="name"><strong>nome</strong></label>
+                <input type="text" class="cx_entrada" placeholder="Usuario"> 
+                <label for="senha"><b>senha</b></label>
+                <input type="password" class="cx_entrada" placeholder="Digite sua senha">
+                <label for="email"><b>Email</b></label>
+                <input type="email" name="email_user" class="cx_entrada" placeholder="Digite seu email" required>
+                
+            </div>
+
+            <div class="dados_user">
+
+               <!-- correção para melhor funcionamento do TELEFONE -->
+                <div class="direction">
+
+                    <label for="telefone"><b>Telefone</b></label>
+                    <input type="text" id="telefone" name="telefone_1" placeholder="Digite seu Telefone (Celular)" maxlength="15" required>
+
+                </div>
+
+                <!-- correção para melhor duncionamento CPF -->
+                 <div class="direction">
+
+                      <label for="cpf"><b>CPF</b></label>
+                      <input type="text" id="cpf" name="CPF_user" placeholder="Coloque seu CPF" maxlength="14" required>
+                
+                    </div>
+            </div>
+        </div>
+            
+        <label id="quest"><b>Gênero</b></label>
+
+        <div class="interation">
+            <label>masculino</label>
+            <input type="checkbox" name="cx_1" required>
+            <label>Feminino</label>
+            <input type="checkbox" name="cx_2" required>
+        </div>
+
+        <div class="terms_privace">
+            <p>ao clicar aqui, voce concorda com nossos <br>
+                <a class="links" href="Termos serviços & politica de privacidade.txt">Termos de serviços</a>
+                e
+                <a class="links" href="Termos serviços & politica de privacidade.txt">política de privacidade</a>
+            </p>
+        </div>
+
+        <label for="button"><button type="button" class="btn" onclick="limparFormulario()">Concluido</button></label>
+    
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
