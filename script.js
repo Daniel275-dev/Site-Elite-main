@@ -62,3 +62,9 @@ function scrollStories(distance) {
   const container = document.getElementById('storyContainer');
   container.scrollBy({ left: distance, behavior: 'smooth' });
 }
+//menu mobile
+document.getElementById('btn-mobile').addEventListener('click', function () {
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('active');
+});
+

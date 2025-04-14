@@ -25,24 +25,31 @@
 
     </div>
 
-    <div class="nav">
+    <div id="nav">
         
         <img src="imagotipo_elite.png" alt="logo Elite">
 
         <h1><strong>ELITE SOCCER HUB</strong></h1>
 
-        <div class="nav_tags">
+        <ul id="icone-menu">
+            <li>
+                <button id="btn-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="16%" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+                        <path class="menu-principal" d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                        <path class="menu-principal" d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                    </svg>
+                </button>
+            </li>
+        </ul>
 
-            <label><a href="">Loja</a></label>
+        <ul id="menu" class="nav_tags">
 
-            <label><a href="">Carrinho</a></label>
-
-            <Label><a href="">Camisetas</a></label>
-
-            <label><a href="">Conta</a></label>
-
-            <label><a href="">Endereço</a></label>
-        </div>
+            <label><li><a href="#main">Loja</a></li></label>
+            <label><li><a href="">Carrinho</li></a></label>
+            <Label><li><a href="">Camisetas</li></a></label>
+            <label><li><a href="">Conta</a></li></label>
+            <label><li><a href="">Endereço</li></a></label>
+        </ul>
 
         <div class="search">
             <img src="https://icones.pro/wp-content/uploads/2021/02/loupe-et-icone-de-recherche-de-couleur-rose.png" alt="lupa">
@@ -75,7 +82,7 @@
       
         <button class="scroll-btn" onclick="scrollStories(200)">➡</button>
     </div>
-    <main>
+    <main id="main">
         <div class="sidebar">
             <img src="camisetas/manchester city_1.jpg" alt="camisa 1">
             <p>Camiseta Manchester city Original</p>
