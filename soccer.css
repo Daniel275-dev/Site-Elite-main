@@ -33,6 +33,9 @@ body, html{
 .header a:hover{
     text-decoration: 2px underline black;
 }
+.imgsearch{
+     height: 100%;
+}
 #nav{
     background-color: rgba(147, 134, 223, 0.854);
     width: 100%;
@@ -66,14 +69,14 @@ body, html{
     color: white;
     text-decoration: 2px underline rgb(120, 0, 248);
 }
-.nav_tags label{
+.nav_tags li{
     height: 30px;
     width: 90px;
     align-content: center;
     text-align: center;
     border-radius: 15px 15px 15px 15px;
 }
-label:hover{
+li:hover{
     background-color: rgb(195, 0, 255);
 }
 .search{
@@ -85,8 +88,8 @@ label:hover{
     width: 200px;
 }
 .search img{
-    width: calc(100% - 22px);
-    height: 28px;
+    width: 40px;
+    height: 100%;
     background-color: #5f41aa;
     border-radius: 5px 0px 0px 5px;
 }
@@ -267,6 +270,17 @@ main{
   .nav_tags, ul#icone-menu{
     list-style: none;
   }
+  #nav{
+    height: auto;
+    padding: 7px;
+    width: 98%;
+}
+#nav-mobile{
+    display: none;
+    height: auto;
+    padding: 7px;
+    width: 98%;
+}
 
   @media screen and (max-width: 768px) {
     body{
@@ -280,26 +294,32 @@ main{
     .header h1 {
         margin-left: 20px;
         font-size: 20px;
+        text-align: center;
+        flex-grow: 1;
     }
 
-    #nav {
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-end;
+    #nav{
+        display: none;
+        height: auto;
+        padding: 7px;
+        width: 98%;
+    }
+    #nav-mobile{
+        display: flex;
         height: auto;
         padding: 7px;
         width: 98%;
     }
 
-
     .nav_tags {
         display: none;
         flex-flow: column;
-        justify-content: flex-end;
+        justify-content: flex-start;
+        gap: 15px;
         align-items: center;
         background-color: #7d8ed9;
         width: 40%;
-        height:calc(100vh - 120px);
+        border-bottom: 1px solid black;
         top: 28%;
         margin-left: 0;
         padding: 0;
@@ -309,7 +329,8 @@ main{
         z-index: 1000px;
     }
 
-    .nav_tags a, .nav_tags label, .nav_tags li {
+
+    .nav_tags a, .nav_tags li, .nav_tags li {
         margin: 5px 0;
         font-size: 14px;
         border-radius: 4px;
@@ -317,12 +338,13 @@ main{
         font-weight: 600;
         font-size: 15px;
     }
-
-    #nav #icone-menu{ 
-        display:flex ;
-        margin-left: 175px;
+    li {
+        margin: 5px 0;
+        font-size: 14px;
+        border-radius: 4px;
         list-style: none;
-        
+        font-weight: 600;
+        font-size: 15px;
     }
 
     .menu-principal{
@@ -336,18 +358,25 @@ main{
         background: none;
         border: none;
         cursor: pointer;
-        margin-left: 370%;
     }
 
-    .nav_tags.active{
-        display: flex;
+    #menu{
+        position: absolute;
+        right: 320px;
+        top:32px;
+        border-radius: 5px;
+    }
+
+    .btn-menu{
+        text-align: left;
+
     }
 
     .nav_tags a:hover{
         text-decoration: none;
     }
 
-    .nav_tags label:hover{
+    .nav_tags li:hover{
         background-color: #bda6f6;
     }
 
@@ -361,8 +390,8 @@ main{
 
     .search input {
         width: 90%;
-        margin-top: 5px;
         padding: 5px;
+        height: 100%;
     }
 
     .subhead img {
