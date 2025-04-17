@@ -282,7 +282,7 @@ main{
     width: 98%;
 }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 568px) {
     body{
         margin: 0;
     }
