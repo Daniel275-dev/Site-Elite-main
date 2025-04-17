@@ -408,7 +408,7 @@ main{
     }
 
     .sidebar {
-        width: calc(100% - 340px);
+        width: calc(100% - 240px);
     }
 
     .interacao {
