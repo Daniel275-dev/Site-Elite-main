@@ -410,8 +410,7 @@ main{
     }
 
     .sidebar {
-        width: 200px;
-        height: 320px;
+        height: 180px;
     }
 
     .interacao {
