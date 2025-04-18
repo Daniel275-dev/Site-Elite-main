@@ -63,8 +63,11 @@ function scrollStories(distance) {
   container.scrollBy({ left: distance, behavior: 'smooth' });
 }
 //menu mobile
-document.getElementById('btn-mobile')
-function link_menu () {
-  document.getElementById('menu').style.display = 'flex';
-};
-
+function toggle_menu() {
+  const menu = document.getElementById('menu');
+  if (menu.style.display === 'flex') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'flex';
+  }
+}

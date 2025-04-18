@@ -123,55 +123,78 @@ li:hover{
     transform: scale(1.1);
 }
 main{
-    padding: 0;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(219, 219, 219);
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 2rem;
 }
 .sidebar{
-    background-color: white;
-    width: 200px;
-    height: 270px;
+    max-width: 210px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    border: 7px solid rgb(188, 188, 188);
-    border-radius: 7px;
-    margin: 8px;
-    padding: 4px;
+    justify-content: space-evenly;
+    gap: 0.8rem;
+    border: 4px solid rgb(148, 0, 148);
 }
-.sidebar img{
-    padding: 6px;
-    width: 60%;
-    border-radius: 10px;
-}
-.sidebar:hover img{
-    transform: scale(1.2);
-    transition: transform 0.4s;
-}
-.sidebar input{
-    width: 30px;
-    text-align: center;
-    border: 1px ridge black;
-}
-.sidebar button{
-    margin-bottom: 2px;
-    padding: 5px;
-    background-color: #2e3760;
-    color: white;
-    border-radius: 10px;
+  
+  .sidebar:hover {
+    transform: scale(1.02);
+  }
+  
+  .sidebar img {
+    width: calc(100% - 4.15rem);
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.2rem;
+    color: #222;
+    margin: 0.5rem 0;
+  }
+  
+  .sidebar p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+  }
+  
+  .sidebar .price {
+    color: #1a8917;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .sidebar button {
+    width: 170px;
+    padding: 0.6rem 1rem;
+    background: #2e3760;
+    color: #fff;
     border: none;
-    width: 70%;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s ease;
+  }
+  
+  .sidebar button:hover {
+    background: #5d63a0;
+  }
+
+
+.sidebar a:hover{
+    color: rgb(82, 165, 255);
 }
-.sidebar button:hover{
-   background-color:#5d63a0;
-}
+
 .footer{
     background-color: blueviolet;
     width: 100%;
@@ -250,9 +273,8 @@ main{
   }
 
   .story img{
-    height: 90%;
     width: 95%;
-    text-align: center;
+    max-height: 130px;
     cursor: pointer;
     margin: 3px;
   }
@@ -360,9 +382,13 @@ main{
 
     #menu{
         position: absolute;
-        right: 320px;
-        top:32px;
+        right: 220px;
+        top:30px;
         border-radius: 5px;
+    }
+
+    #menu:hover{
+        border-bottom: 1px solid rgb(0, 0, 0, 0.1);
     }
 
     .btn-menu{
@@ -405,10 +431,28 @@ main{
     main {
         flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .sidebar {
         width: calc(100% - 240px);
+        flex-grow: 1;
+        height: 240px;
+        flex-basis: 200;
+    }
+
+    .sidebar {
+        max-width: 90%;
+        padding: 1rem;
+      }
+    
+      .sidebar h2 {
+        font-size: 1rem;
+      }
+    
+      .sidebar p {
+        font-size: 0.9rem;
+      }
     }
 
     .interacao {
@@ -432,8 +476,12 @@ main{
         height: 120px;
     }
 
-    .scroll-btn {
-        font-size: 16px;
-        padding: 8px;
+    .scroll-btn{
+        display: none;
     }
-}
+
+    .story img{
+        max-width: 60px;
+        margin: 3px;
+  }
+
