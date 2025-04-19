@@ -485,3 +485,31 @@ main{
   }
 
   }
+
+  @media (max-width: 420px) {
+    #main {
+      justify-content: center;
+      padding: 10px;
+    }
+  
+    .sidebar {
+      width: 100%;
+      max-width: 340px;
+      padding: 12px;
+    }
+  
+    .btn {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+    }
+  
+    .descrição, .preço, .price {
+      font-size: 0.95rem;
+    }
+  
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
+  
