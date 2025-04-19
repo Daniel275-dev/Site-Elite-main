@@ -488,14 +488,18 @@ main{
 
   @media (max-width: 420px) {
     #main {
-      justify-content: center;
-      padding: 10px;
+        display: flex;
+        flex-wrap: wrap;          /* permite quebrar linha */
+        gap: 20px;                /* espaço entre as caixinhas */
+        justify-content: center; /* centraliza as caixinhas */
+        padding: 20px;
     }
   
     .sidebar {
-      width: 100%;
-      max-width: 340px;
-      padding: 12px;
+        width: 200px;             /* largura de cada caixinha */
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
     }
   
     .btn {
